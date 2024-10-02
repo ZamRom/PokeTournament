@@ -133,7 +133,7 @@ def pokeSearch(p: str):
 db = MySQLdb.connect(  # esto hace la conexion a la base de datos
     host="localhost",  # el puerto es 3308 porque es el puerto que
     user="root",  # le deje a mariaDB
-    password="zamromxd",
+    password="deadzamxd",
     database="PokeSearch",
     port=3308,
 )
@@ -159,6 +159,6 @@ for t_id in TYPES:
         else:
             relations[t_id][rt[0]].append(rt[1])
 
-p = input().strip()
+p = input("Nombre del pokemon: ").strip()
 worst, better =pokeSearch(p)
-print(worst,better)
+print(f"peor contra: {worst}, mejor contra: {better}")
