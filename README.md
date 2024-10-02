@@ -3,7 +3,7 @@ Project to System modeling
 
 ## Contactos
 
-Ariel Rodolfo Zarmudio Romero- zamromxd@gmail.com
+Ariel Rodolfo Zarmudio Romero - zamromxd@gmail.com
 
 ## Licencia
 
@@ -28,12 +28,14 @@ Dado 2^n equipos de Pokémon dados por el usuario, simular combates dobles usand
 
 ## Arquitectura
 
-**Adquisición:** Para la adquisicion de informacion se utilizará la base de datos creada por el equipo del proyecto de [PokeSearch](https://github.com/ZamRom/PokeSearch) aunque podría ser modificada en un uso posterior si se ve que no cumplé los valores requeridos para el proyecto.  
+**Adquisición:** Para la adquisicion de informacion se utilizará la base de datos creada por el equipo del proyecto de [PokeSearch](https://github.com/ZamRom/PokeSearch) aunque será modificada en un uso posterior si se ve que no cumplé los valores requeridos para el proyecto.  
+
 **Almacenamiento:** Se utilizará MariaDB como MDBS para realizar las consultas SQL requeridas.
+
 **Procesamiento:** Una vez que el usuario creé e inserte los equipos de pokemon para el torneo se planea que sea organizado de manera aleatoria para brindar dinamismo y utilizando las formulas de creacion de estadisticas y de daño se simule el combate de la mejor manera. Dentro del combate podría usarse el algoritmo creado para el proyecto de PokeSearch para escoger el mejor pokemon del equipo para el combate actual.
 
 ## Tecnologías Utilizadas
 
 - [Python](https://docs.python.org/release/3.11.9/) (v3.11.9)
-- [mysql](https://dev.mysql.com/doc/connector-python/en/)
+- [mySQLdb](https://mysqlclient.readthedocs.io/index.html)
 - [MariaDB](https://mariadb.com/kb/en/documentation/)
